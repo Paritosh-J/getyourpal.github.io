@@ -204,13 +204,12 @@
   }
 }
 
-/* @media only screen and (max-width: 693px) {
+@media only screen and (max-width: 545px) {
   .intro{
-    margin-right: 10rem;
-    width: 15rem;
-    text-align: center;  
+    width: 12rem;
+    text-align: justify; 
   }
-} */
+}
 
 @media only screen and (max-width: 415px) {
   .dogQuote {
@@ -234,10 +233,10 @@
   }
 }
 
-@media only screen and (max-width: 280px) {
-  /* .navbar ul li a {
-    padding: 5px;
-    font-size: larger;
-    margin-right: 5px;
-  } */
+@media only screen and (max-width: 281px) {
+  .intro{
+    width: 7rem;
+    font-size: small;
+    text-align: justify;
+  }
 }
