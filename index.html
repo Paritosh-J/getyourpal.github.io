@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Your Pal</title>
+  </head>
+  <link rel="stylesheet" href="./geturpalCSS.css" />
+  <link rel="icon" href="./titleBarImg.jpg" type="image/x-icon" />
+  <body>
+    <div class="indexPg">
+      <!-- Nav Bar -->
+      <div class="navbar" style="float: right">
+        <button onclick="dropDownMenu()" class="dropBtn">Menu</button>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Puppies</a>
+            </li>
+            <li>
+              <a href="">Breeds</a>
+            </li>
+            <li>
+              <a href="">Dog Food</a>
+            </li>
+            <li>
+              <a href="">Toys</a>
+            </li>
+            <li>
+              <a href="">Clothing</a>
+            </li>
+            <li>
+              <a href="">Grooming</a>
+            </li>
+            <li>
+              <a href="">Health & Hygiene</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="dropDown" class="dropContent">
+          <a href="">Puppies</a>
+          <a href="">Breeds</a>
+          <a href="">Dog Food</a>
+          <a href="">Toys</a>
+          <a href="">Clothing</a>
+          <a href="">Grooming</a>
+          <a href="">Health & Hygiene</a>
+        </div>
+      </div>
+
+      <script>
+        function dropDownMenu() {
+          document.getElementById("dropDown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+          if (!e.target.matches(".dropBtn")) {
+            let dropDowns = document.getElementsByClassName("dropContent"),
+              i;
+            for (i = 0; i < dropDowns.length; i++) {
+              let openDropDown = dropDowns[i];
+              if (openDropDown.classList.contains("show"))
+                openDropDown.classList.remove("show");
+            }
+          }
+        };
+      </script>
+
+      <div class="dogQuote">
+        “Dogs do speak, but only to those who know how to listen.”
+        <p id="author">– Orhan Pamuk</p>
+      </div>
+
+      <section>
+        <div class="intro">
+          <p>
+            Buy Dogs of all breeds, products related to them and get help in
+            grooming them.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
