@@ -238,6 +238,48 @@
 }
 
 /* puppies.html */
+.drpDown {
+  position: relative;
+  display: inline-block;
+}
+
+.drpBtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.drpContent {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drpContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drpContent a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.drpDown:hover .drpContent {
+  display: block;
+}
+.drpDown:hover .drpBtn {
+  background-color: whitesmoke;
+  color: black;
+}
+
 .puppies {
   background: url("https://wallpaperaccess.com/full/390954.jpg") no-repeat
     center;
