@@ -244,8 +244,9 @@
 
 /* puppies.html */
 .puppies {
-  background: url("https://wallpaperaccess.com/full/390954.jpg") center center / cover;
-  height: 45rem;
+  background: url("https://wallpaperaccess.com/full/390954.jpg") no-repeat
+    center center/cover;
+  height: 63rem;
   top: 0px;
   left: 0px;
   max-width: 100%;
@@ -267,11 +268,11 @@
   animation-fill-mode: forwards;
 }
 
-.pupImages{
+.pupImages {
   display: flex;
 }
 
-#pupName{
+#pupName {
   display: inline-block;
   font-size: smaller;
   text-decoration: underline solid transparent;
@@ -279,7 +280,7 @@
   cursor: pointer;
 }
 
-#pupName:hover{
+#pupName:hover {
   text-decoration: underline solid black;
   background-color: whitesmoke;
   color: black;
